@@ -14,7 +14,7 @@ while True:
     dest = input("ingrese la ciudad de destino: ")
     dest_lower= dest.lower()
     if(dest_lower=="s" or dest_lower=="salida"):
-        print("ha salido del bucle exitosamente")
+        print("ha salido del sistema exitosamente")
         break
     url = main_api + urllib.parse.urlencode({"key": key, "from":orig, "to":dest})
     json_data = requests.get(url).json()
